@@ -1,0 +1,12 @@
+number = int(input('Enter the coins'))
+
+count =0
+
+#Check it from the bigest
+coin_types = [500, 100, 50, 10]
+
+for coin in coin_types:
+    count += number // coin
+    number %= coin
+
+print(count)

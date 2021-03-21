@@ -29,3 +29,18 @@ s=[1,2,3,4,5,6,7]
 print(s[0:6])
 print(s[0:7:2]) # Print with odd numbers
 
+a,b,c =1,2,3
+print(a,b,c)
+
+x =6
+y =2
+x, y = y+2, x+3
+
+print(x,y)
+
+n =12
+print(id(n))
+x= 0
+print(type(x+17))
+#print(type(x=17))
+print(len(s))

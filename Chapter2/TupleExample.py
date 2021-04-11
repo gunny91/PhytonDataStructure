@@ -5,3 +5,7 @@ tuple3 = tuple(list3)
 
 if tuple1 == tuple2 == tuple3:
     print("tuple1과 tuple2와 tuple3은 모두 같습니다.")
+
+    tuple1 = (11, 22, 33)
+    for i in range(len(tuple1)):
+        print(tuple1[i])

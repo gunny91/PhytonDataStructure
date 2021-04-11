@@ -20,3 +20,16 @@ print("x, y로 이루어진 튜플 position의 값은 {}입니다.".format(posit
 
 a, b = 1, 2
 c = a, b      #c = (1, 2)
+
+c = (3, 4)
+d, e = c     # c의 값을 언패킹하여 d, e에 값을 저장
+f = d, e     # 변수 d와 e를 f에 패킹
+
+a = 1
+b = 2
+
+#코드를 작성해 보세요. 위치 교환
+a, b = b,a
+
+
+print("a : {}, b : {}".format(a, b))

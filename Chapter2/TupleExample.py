@@ -33,3 +33,23 @@ a, b = b,a
 
 
 print("a : {}, b : {}".format(a, b))
+
+for a in enumerate(list):
+    print('{}번째 값: {}'.format(a[0], a[1]))
+
+for a in enumerate(list):
+    print('{}번째 값: {}'.format(*a))
+
+    for a in dict.items():
+        print('{}의 나이는:{}'.format(a[0], a[1]))
+
+    for a in dict.items():
+        print('{}의 나이는:{}'.format(*a))
+
+ages = {'Tod' : 35, 'Jane' : 23, 'Paul' : 62}
+
+for a in ages.items():
+    print('{}의 나이는:{}'.format(a[0], a[1]))
+
+for a in ages.items():
+    print('{}의 나이는:{}'.format(*a))    # 두 출력 결과가 같습니다.

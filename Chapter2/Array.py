@@ -44,3 +44,16 @@ x= 0
 print(type(x+17))
 #print(type(x=17))
 print(len(s))
+
+L = [3,8,2,7,6,10,9]
+L2 = sorted(L)
+print(L2)
+L.sort()
+print(L)
+
+L = ['abcd', 'xyz', 'spam']
+print(sorted(L, key=lambda x:len(x)))
+
+temp =[{'name': 'Jhon', 'score': 83}, {'name': 'Nim', 'score': 92}]
+temp.sort(key=lambda x: x['score'], reverse=True)
+print(temp.sort(key=lambda x: x['score'], reverse=True))

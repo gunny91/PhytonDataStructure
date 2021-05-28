@@ -1,0 +1,44 @@
+Python 
+import requests
+from bs4 import BeautifulSoup
+
+reqyests  페이지를 호출하는 function
+- 금융 특정 종목 호출하기
+-  crawl() , parse()?
+- Creating crawl() fucntion
+
+#crawling or parsing, scraping
+#crawl() -> Get the data
+#parse() -> extract important information
+#g o f (x) -> oarse o crawl(url)
+
+#crawl -> requests
+#parse -> bs4
+
+import requests
+def crawl(url):
+	data = requests.get(url)
+	print(data)
+	return data.content
+	
+
+
+def parse(pageString):
+       bsObj = BeautifulSoup(pageString, "htrml.parser")
+	   noToday = bsObj.find("p", {"class" :"no_today"})
+	   blind = noToday.find("span", {"class": "blind"})
+	   price - blind.text
+	   print(noToday)
+	   
+	   #tag, class 
+	   #tag, class div, a, p, span <> -> tag <div>content</div>
+	   #class <p class="no_today">
+	   return price
+	   
+#crawl(url) -> function that get the data
+ url = "" #google.com naver.com
+ pageString =crawl(url)
+ price = parse(pageString)
+ print(pageString)
+ print("price:",price)
+ 	   

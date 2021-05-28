@@ -27,13 +27,13 @@ def parse(pageString):
        bsObj = BeautifulSoup(pageString, "htrml.parser")
 	   noToday = bsObj.find("p", {"class" :"no_today"})
 	   blind = noToday.find("span", {"class": "blind"})
-	   price - blind.text
+	   price =blind.text
 	   print(noToday)
-	   
+	   	   return price
 	   #tag, class 
 	   #tag, class div, a, p, span <> -> tag <div>content</div>
 	   #class <p class="no_today">
-	   return price
+
 	   
 #crawl(url) -> function that get the data
  url = "" #google.com naver.com
